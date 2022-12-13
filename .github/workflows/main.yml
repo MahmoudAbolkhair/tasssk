@@ -5,13 +5,26 @@
 
 
 
-  jobs:
-    build:
-     runs-on: ubuntu-latest
 
-     steps:
-       - name: 'testing git hub action'
-         run: pwd
 
-       - name: 'testing branch'
-       run: echo mahmoud
+jobs:
+  bulid:
+   runs-on: ubuntu-latest
+
+   steps:
+     - uses: actions/checkout@v3
+
+     
+      - name: "login to docker hub"
+       run: docker login --username abolkhair --password dckr_pat_d2YQNaxfJTaRzLAQg7Ii4D7AhfY
+
+        -name: "Building docker image"
+         run: docker build -t abolkhair/aa .
+
+          -name: "Pushing to docker hub"
+           run: docker push abolkhair/aa
+
+
+       
+       
+

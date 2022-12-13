@@ -10,8 +10,8 @@
      runs-on: ubuntu-latest
 
      steps:
-       - name: 'testing git hub action'
+       - uses: actions/checkout@v3
          run: pwd
 
-       - name: 'testing branch'
-         run: echo mahmoud
+       - name: 'login to docker hub'
+         run: docker login --username abolkhair --passworddckr_pat_VeXvip0awbc97kUFYbOvRmUVblg

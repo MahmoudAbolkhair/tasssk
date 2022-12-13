@@ -13,11 +13,11 @@
        - uses: actions/checkout@v3
          
 
-       - name: 'login to docker hub'
+        - name: 'login to docker hub'
          run: docker login --username abolkhair --password dckr_pat_VeXvip0awbc97kUFYbOvRmUVblg
           
         - name: "building docker image"
-         run: docker build -t abolkhair/aa .
+          run: docker build -t abolkhair/aa .
            
-       - name: "pushing to docker hub"
+        - name: "pushing to docker hub"
           run: docker push abolkhair/aa 

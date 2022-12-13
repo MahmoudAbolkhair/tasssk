@@ -10,8 +10,8 @@
      runs-on: ubuntu-latest
 
      steps:
-       - uses: actions/checkout@3
+       - name: 'testing git hub action'
          run: pwd
 
        - name: 'testing branch'
-         run: echo mahmoud
+       run: echo mahmoud

@@ -17,13 +17,6 @@ jobs:
       - name: "login to docker hub"
         run: docker login --username abolkhair --password dckr_pat_d2YQNaxfJTaRzLAQg7Ii4D7AhfY
 
-      - name: "Building docker image"
-       run: docker build -t abolkhair/aa .
-
-      - name: "Pushing to docker hub"
-        run: docker push abolkhair/aa
-
-
        
        
 

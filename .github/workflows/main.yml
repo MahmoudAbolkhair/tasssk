@@ -1,7 +1,7 @@
 on:
   push:
-   branches:
-      - master
+    branches:
+     - master
 
 
 
@@ -10,7 +10,7 @@ jobs:
   
   bulid:
    
-   runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
      - uses: actions/checkout@v3

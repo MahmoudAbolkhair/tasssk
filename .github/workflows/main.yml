@@ -1,18 +1,17 @@
-on:
- push:
- branches:
-    -master
-
+  on:
+    push:
+      branches:
+        - master
 
 
 
   jobs:
     build:
-     runs-on:ubuntu-latest
+     runs-on: ubuntu-latest
 
-    steps:
-   - name: 'testing git hub action'
-   action: pwd
+     steps:
+       - name: 'testing git hub action'
+         run: pwd
 
-   - name: 'testing branch'
-  action : echo mahmoud
+       - name: 'testing branch'
+         run: echo mahmoud

@@ -10,14 +10,8 @@
      runs-on: ubuntu-latest
 
      steps:
-       - uses: actions/checkout@v3
-         
+       - uses: actions/checkout@3
+         run: pwd
 
-        - name: 'login to docker hub'
-         run: docker login --username abolkhair --password dckr_pat_VeXvip0awbc97kUFYbOvRmUVblg
-          
-        - name: "Building docker image"
-          run: docker build -t abolkhair/aa .
-           
-        - name: "Pushing to docker hub"
-          run: docker push abolkhair/aa 
+       - name: 'testing branch'
+         run: echo mahmoud

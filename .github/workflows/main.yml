@@ -14,4 +14,4 @@
          
 
        - name: 'login to docker hub'
-         run: docker login --username abolkhair --passworddckr_pat_VeXvip0awbc97kUFYbOvRmUVblg
+         run: docker login --username abolkhair --password dckr_pat_VeXvip0awbc97kUFYbOvRmUVblg

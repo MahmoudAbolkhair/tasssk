@@ -16,8 +16,8 @@
         - name: 'login to docker hub'
          run: docker login --username abolkhair --password dckr_pat_VeXvip0awbc97kUFYbOvRmUVblg
           
-        - name: "building docker image"
+        - name: "Building docker image"
           run: docker build -t abolkhair/aa .
            
-        - name: "pushing to docker hub"
+        - name: "Pushing to docker hub"
           run: docker push abolkhair/aa 

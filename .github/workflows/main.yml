@@ -11,8 +11,8 @@ on:
      runs-on:ubuntu-latest
 
     steps:
-   name: 'testing git hub action'
+   - name: 'testing git hub action'
    action: pwd
 
-   name: 'testing branch'
+   - name: 'testing branch'
    action : echo mahmoud
